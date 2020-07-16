@@ -1,0 +1,1222 @@
+{
+	"id": "36f21916-0932-557e-70b5-3563e52749c5",
+	"name": "bookstore",
+	"description": "",
+	"order": [
+		"ecb3c8a7-c348-18b3-a710-c6ea621a31ea",
+		"d72f6570-c395-cc51-90e7-eed1e0eaa86f",
+		"3658cf91-443f-f5ec-8995-cb97b4b9919f",
+		"50e9bf32-c27a-ccb2-b211-d4c956d1c5f7",
+		"31abd5d9-1169-21c6-862a-64d2ebb06cdc",
+		"9f7d0bcf-8846-64c5-2a9d-4a0494865152",
+		"6cbf2205-2cbb-8ca4-3f69-8891887a0e38"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1594889271721,
+	"owner": "10659047",
+	"public": false,
+	"requests": [
+		{
+			"id": "31abd5d9-1169-21c6-862a-64d2ebb06cdc",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost/BookStoreAPI/public/transaction_detail/TR001",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
+			"data": null,
+			"dataMode": "params",
+			"name": "Request untuk melihat detaik data transaksi",
+			"description": "keterangan\n \n -/transaction_detail/{no_trans}\n -no_trans adalah nomor transaksi",
+			"descriptionFormat": "html",
+			"time": 1594890613883,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 173,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "595",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 09:09:07 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"data\":[{\"trans_id\":\"TR001\",\"book_id\":1,\"id\":1,\"title\":\"Learn Flutter Beginner\",\"author\":\"Mohammad Rangga\",\"description\":\"Learn Fluter Beginner\",\"price\":100000,\"photo\":\"656b947926b8842cacc24f51a5c6e09a73e14398\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"trans_id\":\"TR001\",\"book_id\":3,\"id\":3,\"title\":\"Learn  Mobile with Android Studio\",\"author\":\"Mohammad Rangga\",\"description\":\"Learning Android Studio\",\"price\":100000,\"photo\":\"a82316d5b98a8bfeaee6f7a9e0371ec3280d559e\",\"publisher\":\"PT. Elex Media Komputindo\"}],\"info\":{\"trans_id\":\"TR001\",\"user_id\":2,\"date\":\"29 Februari 2020\",\"total\":\"200,000\"}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Response API untuk melihat detail  data transaksi",
+					"id": "11809cd6-90cc-3f95-0dd3-1532f953c163",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/transaction_detail/TR001",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3658cf91-443f-f5ec-8995-cb97b4b9919f",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost/BookStoreAPI/public/book/search/flutter?page=1",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1594890109801,
+			"name": "Request untuk pencarian buku",
+			"description": "keterangan\n\n/book/search/{nama_buku/keyword}?page=1\n\nresponse sama seperti API daftar Buku",
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 358,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "588",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 09:00:31 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"current_page\":1,\"data\":[{\"id\":1,\"title\":\"Learn Flutter Beginner\",\"author\":\"Mohammad Rangga\",\"description\":\"Learn Fluter Beginner\",\"price\":100000,\"photo\":\"656b947926b8842cacc24f51a5c6e09a73e14398\",\"publisher\":\"PT. Elex Media Komputindo\"}],\"first_page_url\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/book\\/search\\/flutter?page=1\",\"from\":1,\"last_page\":1,\"last_page_url\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/book\\/search\\/flutter?page=1\",\"next_page_url\":null,\"path\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/book\\/search\\/flutter\",\"per_page\":10,\"prev_page_url\":null,\"to\":1,\"total\":1}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Response untuk pencarian buku",
+					"id": "079b8e6d-5ca4-eee7-b8ab-083a76e79cf0",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/book/search/flutter?page=1",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "page",
+								"value": "1",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [],
+						"headers": "",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "50e9bf32-c27a-ccb2-b211-d4c956d1c5f7",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost/BookStoreAPI/public/transaction_list/2?page=1",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
+			"data": null,
+			"dataMode": "params",
+			"name": "request untuk melihat daftar transaksi setiap user",
+			"description": "-/transaction_list/{user_id}?page=1\n\nuser_id adalah kolom id pada tabel users",
+			"descriptionFormat": "html",
+			"time": 1594890454073,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 236,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "1196",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 09:06:07 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"current_page\":1,\"data\":[{\"trans_id\":\"TR001\",\"user_id\":2,\"date\":\"29 Februari 2020\",\"total\":\"200,000\"},{\"trans_id\":\"TR001\",\"user_id\":2,\"date\":\"29 Februari 2020\",\"total\":\"200,000\"},{\"trans_id\":\"TR003\",\"user_id\":2,\"date\":\"29 Februari 2020\",\"total\":\"320,000\"},{\"trans_id\":\"TR004\",\"user_id\":2,\"date\":\"29 Februari 2020\",\"total\":\"340,000\"},{\"trans_id\":\"TR005\",\"user_id\":2,\"date\":\"29 Februari 2020\",\"total\":\"320,000\"},{\"trans_id\":\"TR006\",\"user_id\":2,\"date\":\"29 Februari 2020\",\"total\":\"200,000\"},{\"trans_id\":\"TR007\",\"user_id\":2,\"date\":\"01 Maret 2020\",\"total\":\"220,000\"},{\"trans_id\":\"TR008\",\"user_id\":2,\"date\":\"01 Maret 2020\",\"total\":\"240,000\"},{\"trans_id\":\"TR009\",\"user_id\":2,\"date\":\"02 Maret 2020\",\"total\":\"320,000\"},{\"trans_id\":\"TR0010\",\"user_id\":2,\"date\":\"04 Maret 2020\",\"total\":\"320,000\"}],\"first_page_url\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/transaction_list\\/2?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/transaction_list\\/2?page=2\",\"next_page_url\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/transaction_list\\/2?page=2\",\"path\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/transaction_list\\/2\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":12}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "response API untuk melihat daftar transaksi setiap user",
+					"id": "db61a3e0-d05f-55ec-9eb4-ac115fcdcd8a",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/transaction_list/2?page=1",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "page",
+								"value": "1",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [],
+						"headers": "",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6cbf2205-2cbb-8ca4-3f69-8891887a0e38",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/BookStoreAPI/public/transaction",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
+			"data": [],
+			"dataMode": "raw",
+			"name": "API untuk mensave transaksi buku",
+			"description": "keterangan \n -user_id adalah id user \n -id dalam json_array book adalah id buku",
+			"descriptionFormat": "html",
+			"time": 1594891329810,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 189,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "35",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 09:21:09 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"success\":\"1\",\"message\":\"Succeed\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "API response untuk mensave transaksi buku",
+					"id": "085bd9af-ff22-fe4a-8185-c71eaaac302d",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/transaction",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\n  \"user_id\":2,\n  \"books\":[\n  \t {\n  \t \t\"id\":1\n  \t },\n  \t {\n  \t \t\"id\":2\n  \t }\n   ]\n}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"user_id\":2,\n  \"books\":[\n  \t {\n  \t \t\"id\":1\n  \t },\n  \t {\n  \t \t\"id\":2\n  \t }\n   ]\n}"
+		},
+		{
+			"id": "9f7d0bcf-8846-64c5-2a9d-4a0494865152",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost/BookStoreAPI/public/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "Giorno Giovana",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "jojowind@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "jayaswara",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "confirmation_password",
+					"value": "jayaswara",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1594890840369,
+			"name": "API untuk request Register user",
+			"description": "API untuk request Register user",
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 339,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "44",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 09:13:02 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"success\":\"1\",\"message\":\"Register success\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "API untuk response  Register user jika berhasil",
+					"id": "798d1125-278a-0244-acb6-abccd50f1cad",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/register",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": [
+							{
+								"key": "email",
+								"value": "Giorno Giovana",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "name",
+								"value": "jojowind@gmail.com",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "password",
+								"value": "jayaswara",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "confirmation_password",
+								"value": "jayaswara",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 176,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "61",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 09:14:56 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"success\":\"0\",\"message\":\"The email has already been taken.\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "API untuk response Register user jika gagal maka success bernilai \"0\"",
+					"id": "9270069e-a0d2-1e92-06ec-6d2810e0f961",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/register",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": [
+							{
+								"key": "email",
+								"value": "Giorno Giovana",
+								"type": "text",
+								"enabled": true,
+								"description": ""
+							},
+							{
+								"key": "name",
+								"value": "jojowind@gmail.com",
+								"type": "text",
+								"enabled": true,
+								"description": ""
+							},
+							{
+								"key": "password",
+								"value": "jayaswara",
+								"type": "text",
+								"enabled": true,
+								"description": ""
+							},
+							{
+								"key": "confirmation_password",
+								"value": "jayaswara2",
+								"type": "text",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"method": "POST",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "d72f6570-c395-cc51-90e7-eed1e0eaa86f",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost/BookStoreAPI/public/book?page=1",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
+			"data": null,
+			"dataMode": "params",
+			"name": "Request API untuk daftar buku",
+			"description": "Request API untuk daftar buku\n\n-keterangan utk akses foto bisa diambil di /book/image/{photo}\n\n-photo adalah nama file foto",
+			"descriptionFormat": "html",
+			"time": 1594889915781,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 212,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "2589",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 08:56:39 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"current_page\":1,\"data\":[{\"id\":1,\"title\":\"Learn Flutter Beginner\",\"author\":\"Mohammad Rangga\",\"description\":\"Learn Fluter Beginner\",\"price\":100000,\"photo\":\"656b947926b8842cacc24f51a5c6e09a73e14398\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"id\":2,\"title\":\"Learn  Golang\",\"author\":\"Mohammad Rangga\",\"description\":\"Learn Golang For Advanced\",\"price\":100000,\"photo\":\"84f86cf1b77613605ab8ce79a0d3681307dd69e6\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"id\":3,\"title\":\"Learn  Mobile with Android Studio\",\"author\":\"Mohammad Rangga\",\"description\":\"Learning Android Studio\",\"price\":100000,\"photo\":\"a82316d5b98a8bfeaee6f7a9e0371ec3280d559e\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"id\":4,\"title\":\"Learn  Adobe Photosop\",\"author\":\"Mohammad Rangga\",\"description\":\"Learning Adobe Photosop easy\",\"price\":120000,\"photo\":\"4e0a79463fef1715ffa7a5cd26fabfd24645a0f4\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"id\":5,\"title\":\"World War 3 happening\",\"author\":\"Mohammad Rangga\",\"description\":\"World War 3 happening\",\"price\":120000,\"photo\":\"0f946c3b1697b63f7880feca7ed230a686f86378\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"id\":6,\"title\":\"World War 2 : Nazi Crime\",\"author\":\"Mohammad Rangga\",\"description\":\"World War 2 : Nazi Crime\",\"price\":120000,\"photo\":\"5d2dccc85579589a8485cc14e9799ec8f83a5ca6\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"id\":7,\"title\":\"World War 2 : Japan Surrender\",\"author\":\"Mohammad Rangga\",\"description\":\"World War 2 : Japan Surrender\",\"price\":120000,\"photo\":\"6007ae91304ea21ca4b7f07bcf2b014f3d300119\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"id\":8,\"title\":\"History of Arabian King\",\"author\":\"Mohammad Rangga\",\"description\":\"History of Arabian King\",\"price\":80000,\"photo\":\"bd648c91a5566f15c718e751c8a9cb4ae46d9b43\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"id\":9,\"title\":\"The Death Of Hitler\",\"author\":\"Mohammad Rangga\",\"description\":\"Explaining the death of hitler\",\"price\":80000,\"photo\":\"1613eaacb819f161df488faa9320f951f51b2aa0\",\"publisher\":\"PT. Elex Media Komputindo\"},{\"id\":10,\"title\":\"Fall of Russian Communist\",\"author\":\"Mohammad Rangga\",\"description\":\"The explaining history about Stalin and Red Army destruction\",\"price\":80000,\"photo\":\"ac82c5aa41507c15dd32ec4b322c987d34263115\",\"publisher\":\"PT. Elex Media Komputindo\"}],\"first_page_url\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/book?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/book?page=2\",\"next_page_url\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/book?page=2\",\"path\":\"http:\\/\\/localhost\\/BookStoreAPI\\/public\\/book\",\"per_page\":10,\"prev_page_url\":null,\"to\":10,\"total\":12}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Response untuk daftar buku",
+					"id": "61ddab1f-936e-415f-dab1-0750212b740f",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/book?page=1",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "page",
+								"value": "1",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [],
+						"headers": "",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ecb3c8a7-c348-18b3-a710-c6ea621a31ea",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost/BookStoreAPI/public/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
+			"data": [
+				{
+					"key": "email",
+					"value": "achmed@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "jayaswara",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Request untuk login",
+			"description": "request untuk login users",
+			"descriptionFormat": "html",
+			"time": 1594889317261,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 505,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "180",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 08:47:28 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"success\":\"1\",\"message\":\"Login Succeed\",\"data\":{\"id\":11,\"name\":\"Ahmed Albar\",\"email\":\"achmed@gmail.com\",\"password\":\"$2y$10$yx4UDoZNWryXwqRhWQcFNuHQRvtzpGXfXISsJyd3ykgyB.8w88n36\"}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Hasil request jika berhasil",
+					"id": "34276112-7bd8-0be0-ba44-5354ed2ce576",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/login",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": [
+							{
+								"key": "email",
+								"value": "achmed@gmail.com",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "password",
+								"value": "jayaswara",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 288,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "54",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 08:53:23 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"success\":\"0\",\"message\":\"Wrong username or Password\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Request untuk login jika gagal",
+					"id": "5da11a2c-5b77-1ef8-9430-2601f4938f71",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/login",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": [
+							{
+								"key": "email",
+								"value": "achmed@gmail.com",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "password",
+								"value": "jayaswara2",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 500,
+						"name": "Internal Server Error"
+					},
+					"time": 227,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "text/html; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 08:54:31 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta name=\"robots\" content=\"noindex,nofollow\" />\n        <style>\n            /* Copyright (c) 2010, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: https://yuilibrary.com/license/ */\n            html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}\n            html { background: #eee; padding: 10px }\n            img { border: 0; }\n            #sf-resetcontent { width:970px; margin:0 auto; }\n                        body { background-color: #F9F9F9; color: #222; font: 14px/1.4 Helvetica, Arial, sans-serif; margin: 0; padding-bottom: 45px; }\n\n            a { cursor: pointer; text-decoration: none; }\n            a:hover { text-decoration: underline; }\n            abbr[title] { border-bottom: none; cursor: help; text-decoration: none; }\n\n            code, pre { font: 13px/1.5 Consolas, Monaco, Menlo, \"Ubuntu Mono\", \"Liberation Mono\", monospace; }\n\n            table, tr, th, td { background: #FFF; border-collapse: collapse; vertical-align: top; }\n            table { background: #FFF; border: 1px solid #E0E0E0; box-shadow: 0px 0px 1px rgba(128, 128, 128, .2); margin: 1em 0; width: 100%; }\n            table th, table td { border: solid #E0E0E0; border-width: 1px 0; padding: 8px 10px; }\n            table th { background-color: #E0E0E0; font-weight: bold; text-align: left; }\n\n            .hidden-xs-down { display: none; }\n            .block { display: block; }\n            .break-long-words { -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }\n            .text-muted { color: #999; }\n\n            .container { max-width: 1024px; margin: 0 auto; padding: 0 15px; }\n            .container::after { content: \"\"; display: table; clear: both; }\n\n            .exception-summary { background: #B0413E; border-bottom: 2px solid rgba(0, 0, 0, 0.1); border-top: 1px solid rgba(0, 0, 0, .3); flex: 0 0 auto; margin-bottom: 30px; }\n\n            .exception-message-wrapper { display: flex; align-items: center; min-height: 70px; }\n            .exception-message { flex-grow: 1; padding: 30px 0; }\n            .exception-message, .exception-message a { color: #FFF; font-size: 21px; font-weight: 400; margin: 0; }\n            .exception-message.long { font-size: 18px; }\n            .exception-message a { border-bottom: 1px solid rgba(255, 255, 255, 0.5); font-size: inherit; text-decoration: none; }\n            .exception-message a:hover { border-bottom-color: #ffffff; }\n\n            .exception-illustration { flex-basis: 111px; flex-shrink: 0; height: 66px; margin-left: 15px; opacity: .7; }\n\n            .trace + .trace { margin-top: 30px; }\n            .trace-head .trace-class { color: #222; font-size: 18px; font-weight: bold; line-height: 1.3; margin: 0; position: relative; }\n\n            .trace-message { font-size: 14px; font-weight: normal; margin: .5em 0 0; }\n\n            .trace-file-path, .trace-file-path a { color: #222; margin-top: 3px; font-size: 13px; }\n            .trace-class { color: #B0413E; }\n            .trace-type { padding: 0 2px; }\n            .trace-method { color: #B0413E; font-weight: bold; }\n            .trace-arguments { color: #777; font-weight: normal; padding-left: 2px; }\n\n            @media (min-width: 575px) {\n                .hidden-xs-down { display: initial; }\n            }\n        </style>\n    </head>\n    <body>\n                    <div class=\"exception-summary\">\n                <div class=\"container\">\n                    <div class=\"exception-message-wrapper\">\n                        <h1 class=\"break-long-words exception-message\">Trying to get property 'password' of non-object</h1>\n                        <div class=\"exception-illustration hidden-xs-down\"><svg viewBox=\"0 0 136 81\" xmlns=\"http://www.w3.org/2000/svg\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.4\"><path d=\"M92.4 20.4a23.2 23.2 0 0 1 9 1.9 23.7 23.7 0 0 1 5.2 3 24.3 24.3 0 0 1 3.4 3.4 24.8 24.8 0 0 1 5 9.4c.5 1.7.8 3.4 1 5.2v14.5h.4l.5.2a7.4 7.4 0 0 0 2.5.2l.2-.2.6-.8.8-1.3-.2-.1a5.5 5.5 0 0 1-.8-.3 5.6 5.6 0 0 1-2.3-1.8 5.7 5.7 0 0 1-.9-1.6 6.5 6.5 0 0 1-.2-2.8 7.3 7.3 0 0 1 .5-2l.3-.3.8-.9.3-.3c.2-.2.5-.3.8-.3H120.7c.2 0 .3-.1.4 0h.4l.2.1.3.2.2-.4.3-.4.1-.1 1.2-1 .3-.2.4-.1.4-.1h.3l1.5.1.4.1.8.5.1.2 1 1.1v.2H129.4l.4-.2 1.4-.5h1.1c.3 0 .7.2 1 .4.2 0 .3.2.5.3l.2.2.5.3.4.6.1.3.4 1.4.1.4v.6a7.8 7.8 0 0 1-.1.6 9.9 9.9 0 0 1-.8 2.4 7.8 7.8 0 0 1-3 3.3 6.4 6.4 0 0 1-1 .5 6.1 6.1 0 0 1-.6.2l-.7.1h-.1a23.4 23.4 0 0 1-.2 1.7 14.3 14.3 0 0 1-.6 2.1l-.8 2a9.2 9.2 0 0 1-.4.6l-.7 1a9.1 9.1 0 0 1-2.3 2.2c-.9.5-2 .6-3 .7l-1.4.1h-.5l-.4.1a15.8 15.8 0 0 1-2.8-.1v4.2a9.7 9.7 0 0 1-.7 3.5 9.6 9.6 0 0 1-1.7 2.8 9.3 9.3 0 0 1-3 2.3 9 9 0 0 1-5.4.7 9 9 0 0 1-3-1 9.4 9.4 0 0 1-2.7-2.5 10 10 0 0 1-1 1.2 9.3 9.3 0 0 1-2 1.3 9 9 0 0 1-2.4 1 9 9 0 0 1-6.5-1.1A9.4 9.4 0 0 1 85 77V77a10.9 10.9 0 0 1-.6.6 9.3 9.3 0 0 1-2.7 2 9 9 0 0 1-6 .8 9 9 0 0 1-2.4-1 9.3 9.3 0 0 1-2.3-1.7 9.6 9.6 0 0 1-1.8-2.8 9.7 9.7 0 0 1-.8-3.7v-4a18.5 18.5 0 0 1-2.9.2l-1.2-.1c-1.9-.3-3.7-1-5.1-2.1A8.2 8.2 0 0 1 58 64a10.2 10.2 0 0 1-.9-1.2 15.3 15.3 0 0 1-.7-1.3 20.8 20.8 0 0 1-1.9-6.2v-.2a6.5 6.5 0 0 1-1-.3 6.1 6.1 0 0 1-.6-.3 6.6 6.6 0 0 1-.9-.5 8.2 8.2 0 0 1-2.7-3.8 10 10 0 0 1-.3-1 10.3 10.3 0 0 1-.3-1.9V47v-.4l.1-.4.6-1.4.1-.2a2 2 0 0 1 .8-.8l.3-.2.3-.2a3.2 3.2 0 0 1 1.8-.5h.4l.3.2 1.4.6.2.2.4.3.3.4.7-.7.2-.2.4-.2.6-.2h2.1l.4.2.4.2.3.2.8 1 .2-.1h.1v-.1H63l1.1.1h.3l.8.5.3.4.7 1 .2.3.1.5a11 11 0 0 1 .2 1.5c0 .8 0 1.6-.3 2.3a6 6 0 0 1-.5 1.2 5.5 5.5 0 0 1-3.3 2.5 12.3 12.3 0 0 0 1.4 3h.1l.2.1 1 .2h1.5l.5-.2H67.8l.5-.2h.1V44v-.4a26.7 26.7 0 0 1 .3-2.3 24.7 24.7 0 0 1 5.7-12.5 24.2 24.2 0 0 1 3.5-3.3 23.7 23.7 0 0 1 4.9-3 23.2 23.2 0 0 1 5.6-1.7 23.7 23.7 0 0 1 4-.3zm-.3 2a21.2 21.2 0 0 0-8 1.7 21.6 21.6 0 0 0-4.8 2.7 22.2 22.2 0 0 0-3.2 3 22.7 22.7 0 0 0-5 9.2 23.4 23.4 0 0 0-.7 4.9v15.7l-.5.1a34.3 34.3 0 0 1-1.5.3h-.2l-.4.1h-.4l-.9.2a10 10 0 0 1-1.9 0c-.5 0-1-.2-1.5-.4a1.8 1.8 0 0 1-.3-.2 2 2 0 0 1-.3-.3 5.2 5.2 0 0 1-.1-.2 9 9 0 0 1-.6-.9 13.8 13.8 0 0 1-1-2 14.3 14.3 0 0 1-.6-2 14 14 0 0 1-.1-.8v-.2h.3a12.8 12.8 0 0 0 1.4-.2 4.4 4.4 0 0 0 .3 0 3.6 3.6 0 0 0 1.1-.7 3.4 3.4 0 0 0 1.2-1.7l.2-1.2a5.1 5.1 0 0 0 0-.8 7.2 7.2 0 0 0-.1-.8l-.7-1-1.2-.2-1 .7-.1 1.3a5 5 0 0 1 .1.4v.6a1 1 0 0 1 0 .3c-.1.3-.4.4-.7.5l-1.2.4v-.7A9.9 9.9 0 0 1 60 49l.3-.6v-.2l.1-.1v-1.6l-1-1.2h-1.5l-1 1.1v.4a5.3 5.3 0 0 0-.2.6 5.5 5.5 0 0 0 0 .5c0 .7 0 1.4.3 2 0 .4.2.8.4 1.2L57 51a9.5 9.5 0 0 1-1.1-.5h-.2a2 2 0 0 1-.4-.3c-.4-.4-.5-1-.6-1.6a5.6 5.6 0 0 1 0-.5v-.5-.5l-.6-1.5-1.4-.6-.9.3s-.2 0-.3.2a2 2 0 0 1-.1 0l-.6 1.4v.7a8.5 8.5 0 0 0 .5 2c.4 1.1 1 2.1 2 2.8a4.7 4.7 0 0 0 2.1.9h1a22.8 22.8 0 0 0 .1 1 18.1 18.1 0 0 0 .8 3.8 18.2 18.2 0 0 0 1.6 3.7l1 1.3c1 1 2.3 1.6 3.7 2a11.7 11.7 0 0 0 4.8 0h.4l.5-.2.5-.1.6-.2v6.6a8 8 0 0 0 .1 1.3 7.5 7.5 0 0 0 2.4 4.3 7.2 7.2 0 0 0 2.3 1.3 7 7 0 0 0 7-1.1 7.5 7.5 0 0 0 2-2.6A7.7 7.7 0 0 0 85 72V71a8.2 8.2 0 0 0 .2 1.3c0 .7.3 1.4.6 2a7.5 7.5 0 0 0 1.7 2.3 7.3 7.3 0 0 0 2.2 1.4 7.1 7.1 0 0 0 4.6.2 7.2 7.2 0 0 0 2.4-1.2 7.5 7.5 0 0 0 2.1-2.7 7.8 7.8 0 0 0 .7-2.4V71a9.3 9.3 0 0 0 .1.6 7.6 7.6 0 0 0 .6 2.5 7.5 7.5 0 0 0 2.4 3 7.1 7.1 0 0 0 7 .8 7.3 7.3 0 0 0 2.3-1.5 7.5 7.5 0 0 0 1.6-2.3 7.6 7.6 0 0 0 .5-2l.1-1.1v-6.7l.4.1a12.2 12.2 0 0 0 2 .5 11.1 11.1 0 0 0 2.5 0h.8l1.2-.1a9.5 9.5 0 0 0 1.4-.2l.9-.3a3.5 3.5 0 0 0 .6-.4l1.2-1.4a12.2 12.2 0 0 0 .8-1.2c0-.3.2-.5.3-.7a15.9 15.9 0 0 0 .7-2l.3-1.6v-1.3l.2-.9V54.6a15.5 15.5 0 0 0 1.8 0 4.5 4.5 0 0 0 1.4-.5 5.7 5.7 0 0 0 2.5-3.2 7.6 7.6 0 0 0 .4-1.5v-.3l-.4-1.4a5.2 5.2 0 0 1-.2-.1l-.4-.4a3.8 3.8 0 0 0-.2 0 1.4 1.4 0 0 0-.5-.2l-1.4.4-.7 1.3v.7a5.7 5.7 0 0 1-.1.8l-.7 1.4a1.9 1.9 0 0 1-.5.3h-.3a9.6 9.6 0 0 1-.8.3 8.8 8.8 0 0 1-.6 0l.2-.4.2-.5.2-.3v-.4l.1-.2V50l.1-1 .1-.6v-.6a4.8 4.8 0 0 0 0-.8v-.2l-1-1.1-1.5-.2-1.1 1-.2 1.4v.1l.2.4.2.3v.4l.1 1.1v.3l.1.5v.8a9.6 9.6 0 0 1-.8-.3l-.2-.1h-.3l-.8-.1h-.2a1.6 1.6 0 0 1-.2-.2.9.9 0 0 1-.2-.2 1 1 0 0 1-.1-.5l.2-.9v-1.2l-.9-.8h-1.2l-.8.9v.3a4.8 4.8 0 0 0-.3 2l.3.9a3.5 3.5 0 0 0 1.2 1.6l1 .5.8.2 1.4.1h.4l.2.1a12.1 12.1 0 0 1-1 2.6 13.2 13.2 0 0 1-.8 1.5 9.5 9.5 0 0 1-1 1.2l-.2.3a1.7 1.7 0 0 1-.4.3 2.4 2.4 0 0 1-.7.2h-2.5a7.8 7.8 0 0 1-.6-.2l-.7-.2h-.2a14.8 14.8 0 0 1-.6-.2 23.4 23.4 0 0 1-.4-.1l-.4-.1-.3-.1V43.9a34.6 34.6 0 0 0 0-.6 23.6 23.6 0 0 0-.4-3 22.7 22.7 0 0 0-1.5-4.7 22.6 22.6 0 0 0-4.6-6.7 21.9 21.9 0 0 0-6.9-4.7 21.2 21.2 0 0 0-8.1-1.8H92zm9.1 33.7l.3.1a1 1 0 0 1 .6.8v.4a8.4 8.4 0 0 1 0 .5 8.8 8.8 0 0 1-1.6 4.2l-1 1.3A10 10 0 0 1 95 66c-1.3.3-2.7.4-4 .3a10.4 10.4 0 0 1-2.7-.8 10 10 0 0 1-3.6-2.5 9.3 9.3 0 0 1-.8-1 9 9 0 0 1-.7-1.2 8.6 8.6 0 0 1-.8-3.4V57a1 1 0 0 1 .3-.6 1 1 0 0 1 1.3-.2 1 1 0 0 1 .4.8v.4a6.5 6.5 0 0 0 .5 2.2 7 7 0 0 0 2.1 2.8l1 .6c2.6 1.6 6 1.6 8.5 0a8 8 0 0 0 1.1-.6 7.6 7.6 0 0 0 1.2-1.2 7 7 0 0 0 1-1.7 6.5 6.5 0 0 0 .4-2.5 1 1 0 0 1 .7-1h.4zM30.7 43.7c-15.5 1-28.5-6-30.1-16.4C-1.2 15.7 11.6 4 29 1.3 46.6-1.7 62.3 5.5 64 17.1c1.6 10.4-8.7 21-23.7 25a31.2 31.2 0 0 0 0 .9v.3a19 19 0 0 0 .1 1l.1.4.1.9a4.7 4.7 0 0 0 .5 1l.7 1a9.2 9.2 0 0 0 1.2 1l1.5.8.6.8-.7.6-1.1.3a11.2 11.2 0 0 1-2.6.4 8.6 8.6 0 0 1-3-.5 8.5 8.5 0 0 1-1-.4 11.2 11.2 0 0 1-1.8-1.2 13.3 13.3 0 0 1-1-1 18 18 0 0 1-.7-.6l-.4-.4a23.4 23.4 0 0 1-1.3-1.8l-.1-.1-.3-.5V45l-.3-.6v-.7zM83.1 36c3.6 0 6.5 3.2 6.5 7.1 0 4-3 7.2-6.5 7.2S76.7 47 76.7 43 79.6 36 83 36zm18 0c3.6 0 6.5 3.2 6.5 7.1 0 4-2.9 7.2-6.4 7.2S94.7 47 94.7 43s3-7.1 6.5-7.1zm-18 6.1c2 0 3.5 1.6 3.5 3.6S85 49.2 83 49.2s-3.4-1.6-3.4-3.6S81.2 42 83 42zm17.9 0c1.9 0 3.4 1.6 3.4 3.6s-1.5 3.6-3.4 3.6c-2 0-3.5-1.6-3.5-3.6S99.1 42 101 42zM17 28c-.3 1.6-1.8 5-5.2 5.8-2.5.6-4.1-.8-4.5-2.6-.4-1.9.7-3.5 2.1-4.5A3.5 3.5 0 0 1 8 24.6c-.4-2 .8-3.7 3.2-4.2 1.9-.5 3.1.2 3.4 1.5.3 1.1-.5 2.2-1.8 2.5-.9.3-1.6 0-1.7-.6a1.4 1.4 0 0 1 0-.7s.3.2 1 0c.7-.1 1-.7.9-1.2-.2-.6-1-.8-1.8-.6-1 .2-2 1-1.7 2.6.3 1 .9 1.6 1.5 1.8l.7-.2c1-.2 1.5 0 1.6.5 0 .4-.2 1-1.2 1.2a3.3 3.3 0 0 1-1.5 0c-.9.7-1.6 1.9-1.3 3.2.3 1.3 1.3 2.2 3 1.8 2.5-.7 3.8-3.7 4.2-5-.3-.5-.6-1-.7-1.6-.1-.5.1-1 .9-1.2.4 0 .7.2.8.8a2.8 2.8 0 0 1 0 1l.7 1c.6-2 1.4-4 1.7-4 .6-.2 1.5.6 1.5.6-.8.7-1.7 2.4-2.3 4.2.8.6 1.6 1 2.1 1 .5-.1.8-.6 1-1.2-.3-2.2 1-4.3 2.3-4.6.7-.2 1.3.2 1.4.8.1.5 0 1.3-.9 1.7-.2-1-.6-1.3-1-1.3-.4.1-.7 1.4-.4 2.8.2 1 .7 1.5 1.3 1.4.8-.2 1.3-1.2 1.7-2.1-.3-2.1.9-4.2 2.2-4.5.7-.2 1.2.1 1.4 1 .4 1.4-1 2.8-2.2 3.4.3.7.7 1 1.3.9 1-.3 1.6-1.5 2-2.5l-.5-3v-.3s1.6-.3 1.8.6v.1c.2-.6.7-1.2 1.3-1.4.8-.1 1.5.6 1.7 1.6.5 2.2-.5 4.4-1.8 4.7H33a31.9 31.9 0 0 0 1 5.2c-.4.1-1.8.4-2-.4l-.5-5.6c-.5 1-1.3 2.2-2.5 2.4-1 .3-1.6-.3-2-1.1-.5 1-1.3 2.1-2.4 2.4-.8.2-1.5-.1-2-1-.3.8-.9 1.5-1.5 1.7-.7.1-1.5-.3-2.4-1-.3.8-.4 1.6-.4 2.2 0 0-.7 0-.8-.4-.1-.5 0-1.5.3-2.7a10.3 10.3 0 0 1-.7-.8zm38.2-17.8l.2.9c.5 1.9.4 4.4.8 6.4 0 .6-.4 3-1.4 3.3-.2 0-.3 0-.4-.4-.1-.7 0-1.6-.3-2.6-.2-1.1-.8-1.6-1.5-1.5-.8.2-1.3 1-1.6 2l-.1-.5c-.2-1-1.8-.6-1.8-.6a6.2 6.2 0 0 1 .4 1.3l.2 1c-.2.5-.6 1-1.2 1l-.2.1a7 7 0 0 0-.1-.8c-.3-1.1-1-2-1.6-1.8a.7.7 0 0 0-.4.3c-1.3.3-2.4 2-2.1 3.9-.2.9-.6 1.7-1 1.9-.5 0-.8-.5-1.1-1.8l-.1-1.2a4 4 0 0 0 0-1.7c0-.4-.4-.7-.8-.6-.7.2-.9 1.7-.5 3.8-.2 1-.6 2-1.3 2-.4.2-.8-.2-1-1l-.2-3c1.2-.5 2-1 1.8-1.7-.1-.5-.8-.7-.8-.7s0 .7-1 1.2l-.2-1.4c-.1-.6-.4-1-1.7-.6l.4 1 .2 1.5h-1v.8c0 .3.4.3 1 .2 0 1.3 0 2.7.2 3.6.3 1.4 1.2 2 2 1.7 1-.2 1.6-1.3 2-2.3.3 1.2 1 2 1.9 1.7.7-.2 1.2-1.1 1.6-2.2.4.8 1.1 1.1 2 1 1.2-.4 1.7-1.6 1.8-2.8h.2c.6-.2 1-.6 1.3-1 0 .8 0 1.5.2 2.1.1.5.3.7.6.6.5-.1 1-.9 1-.9a4 4 0 0 1-.3-1c-.3-1.3.3-3.6 1-3.7.2 0 .3.2.5.7v.8l.2 1.5v.7c.2.7.7 1.3 1.5 1 1.3-.2 2-2.6 2.1-3.9.3.2.6.2 1 .1-.6-2.2 0-6.1-.3-7.9-.1-.4-1-.5-1.7-.5h-.4zm-21.5 12c.4 0 .7.3 1 1.1.2 1.3-.3 2.6-.9 2.8-.2 0-.7 0-1-1.2v-.4c0-1.3.4-2 1-2.2zm-5.2 1c.3 0 .6.2.6.5.2.6-.3 1.3-1.2 2-.3-1.4.1-2.3.6-2.5zm18-.4c-.5.2-1-.4-1.2-1.2-.2-1 0-2.1.7-2.5v.5c.2.7.6 1.5 1.3 1.9 0 .7-.2 1.2-.7 1.3zm10-1.6c0 .5.4.7 1 .6.8-.2 1-1 .8-1.6 0-.5-.4-1-1-.8-.5.1-1 .9-.8 1.8zm-14.3-5.5c0-.4-.5-.7-1-.5-.8.2-1 1-.9 1.5.2.6.5 1 1 .8.5 0 1.1-1 1-1.8z\" fill=\"#fff\" fill-opacity=\".6\"/></svg></div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"container\">\n                                    <div class=\"trace trace-as-html\">\n                        <table class=\"trace-details\">\n                            <thead class=\"trace-head\"><tr><th>\n                                <h3 class=\"trace-class\">\n                                    <span class=\"text-muted\">(1/1)</span>\n                                    <span class=\"exception_title\"><abbr title=\"ErrorException\">ErrorException</abbr></span>\n                                </h3>\n                                <p class=\"break-long-words trace-message\">Trying to get property 'password' of non-object</p>\n                            </th></tr></thead>\n                            <tbody><tr><td><span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\app\\Http\\Controllers\\AuthController.php line 58\"><strong>AuthController.php</strong> line 58</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">Laravel\\Lumen\\Concerns\\{closure}</span>(<span class=\"trace-arguments\">8, 'Trying to get property \\'password\\' of non-object', 'C:\\\\xampp\\\\htdocs\\\\BookStoreAPI\\\\app\\\\Http\\\\Controllers\\\\AuthController.php', 58, <em>array</em>('request' => <em>object</em>(<abbr title=\"Laravel\\Lumen\\Http\\Request\">Request</abbr>), 'validator' => <em>object</em>(<abbr title=\"Illuminate\\Validation\\Validator\">Validator</abbr>), 'users' => <em>null</em>)</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\app\\Http\\Controllers\\AuthController.php line 58\"><strong>AuthController.php</strong> line 58</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"App\\Http\\Controllers\\AuthController\">AuthController</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">Login</span>(<span class=\"trace-arguments\"><em>object</em>(<abbr title=\"Laravel\\Lumen\\Http\\Request\">Request</abbr>)</span>)</td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"\"></abbr></span><span class=\"trace-type\"></span><span class=\"trace-method\">call_user_func_array</span>(<span class=\"trace-arguments\"><em>array</em>(<em>object</em>(<abbr title=\"App\\Http\\Controllers\\AuthController\">AuthController</abbr>), 'Login'), <em>array</em>(<em>object</em>(<abbr title=\"Laravel\\Lumen\\Http\\Request\">Request</abbr>))</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\illuminate\\container\\BoundMethod.php line 32\"><strong>BoundMethod.php</strong> line 32</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Illuminate\\Container\\BoundMethod\">BoundMethod</abbr></span><span class=\"trace-type\">::</span><span class=\"trace-method\">Illuminate\\Container\\{closure}</span>(<span class=\"trace-arguments\"></span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\illuminate\\container\\Util.php line 36\"><strong>Util.php</strong> line 36</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Illuminate\\Container\\Util\">Util</abbr></span><span class=\"trace-type\">::</span><span class=\"trace-method\">unwrapIfClosure</span>(<span class=\"trace-arguments\"><em>object</em>(<abbr title=\"Closure\">Closure</abbr>)</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\illuminate\\container\\BoundMethod.php line 90\"><strong>BoundMethod.php</strong> line 90</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Illuminate\\Container\\BoundMethod\">BoundMethod</abbr></span><span class=\"trace-type\">::</span><span class=\"trace-method\">callBoundMethod</span>(<span class=\"trace-arguments\"><em>object</em>(<abbr title=\"Laravel\\Lumen\\Application\">Application</abbr>), <em>array</em>(<em>object</em>(<abbr title=\"App\\Http\\Controllers\\AuthController\">AuthController</abbr>), 'Login'), <em>object</em>(<abbr title=\"Closure\">Closure</abbr>)</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\illuminate\\container\\BoundMethod.php line 34\"><strong>BoundMethod.php</strong> line 34</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Illuminate\\Container\\BoundMethod\">BoundMethod</abbr></span><span class=\"trace-type\">::</span><span class=\"trace-method\">call</span>(<span class=\"trace-arguments\"><em>object</em>(<abbr title=\"Laravel\\Lumen\\Application\">Application</abbr>), <em>array</em>(<em>object</em>(<abbr title=\"App\\Http\\Controllers\\AuthController\">AuthController</abbr>), 'Login'), <em>array</em>(), <em>null</em></span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\illuminate\\container\\Container.php line 590\"><strong>Container.php</strong> line 590</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Illuminate\\Container\\Container\">Container</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">call</span>(<span class=\"trace-arguments\"><em>array</em>(<em>object</em>(<abbr title=\"App\\Http\\Controllers\\AuthController\">AuthController</abbr>), 'Login'), <em>array</em>()</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php line 376\"><strong>RoutesRequests.php</strong> line 376</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">callControllerCallable</span>(<span class=\"trace-arguments\"><em>array</em>(<em>object</em>(<abbr title=\"App\\Http\\Controllers\\AuthController\">AuthController</abbr>), 'Login'), <em>array</em>()</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php line 342\"><strong>RoutesRequests.php</strong> line 342</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">callLumenController</span>(<span class=\"trace-arguments\"><em>object</em>(<abbr title=\"App\\Http\\Controllers\\AuthController\">AuthController</abbr>), 'Login', <em>array</em>(<em>true</em>, <em>array</em>('uses' => 'App\\\\Http\\\\Controllers\\\\AuthController@Login'), <em>array</em>())</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php line 316\"><strong>RoutesRequests.php</strong> line 316</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">callControllerAction</span>(<span class=\"trace-arguments\"><em>array</em>(<em>true</em>, <em>array</em>('uses' => 'App\\\\Http\\\\Controllers\\\\AuthController@Login'), <em>array</em>())</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php line 278\"><strong>RoutesRequests.php</strong> line 278</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">callActionOnArrayBasedRoute</span>(<span class=\"trace-arguments\"><em>array</em>(<em>true</em>, <em>array</em>('uses' => 'App\\\\Http\\\\Controllers\\\\AuthController@Login'), <em>array</em>())</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php line 263\"><strong>RoutesRequests.php</strong> line 263</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">handleFoundRoute</span>(<span class=\"trace-arguments\"><em>array</em>(<em>true</em>, <em>array</em>('uses' => 'App\\\\Http\\\\Controllers\\\\AuthController@Login'), <em>array</em>())</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php line 165\"><strong>RoutesRequests.php</strong> line 165</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">Laravel\\Lumen\\Concerns\\{closure}</span>(<span class=\"trace-arguments\"><em>object</em>(<abbr title=\"Laravel\\Lumen\\Http\\Request\">Request</abbr>)</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php line 416\"><strong>RoutesRequests.php</strong> line 416</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">sendThroughPipeline</span>(<span class=\"trace-arguments\"><em>array</em>(), <em>object</em>(<abbr title=\"Closure\">Closure</abbr>)</span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php line 171\"><strong>RoutesRequests.php</strong> line 171</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">dispatch</span>(<span class=\"trace-arguments\"><em>null</em></span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php line 108\"><strong>RoutesRequests.php</strong> line 108</span></span></td></tr>\n<tr><td>at <span class=\"trace-class\"><abbr title=\"Laravel\\Lumen\\Application\">Application</abbr></span><span class=\"trace-type\">-></span><span class=\"trace-method\">run</span>(<span class=\"trace-arguments\"></span>)<span class=\"block trace-file-path\">in <span title=\"C:\\xampp\\htdocs\\BookStoreAPI\\public\\index.php line 28\"><strong>index.php</strong> line 28</span></span></td></tr>\n</tbody>\n</table>\n</div>\n\n            </div>\n    </body>\n</html>",
+					"language": "html",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"id": "7e91cf35-6dfc-0be6-7a84-134f287d99a3",
+					"name": "Request untuk login jika user tidak ditemukan atau server error",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": {
+						"url": "localhost/BookStoreAPI/public/login",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": [
+							{
+								"key": "email",
+								"value": "jinx@gmail.com",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "password",
+								"value": "jayaswara2",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
