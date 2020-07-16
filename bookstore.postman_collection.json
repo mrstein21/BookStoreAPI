@@ -9,7 +9,8 @@
 		"50e9bf32-c27a-ccb2-b211-d4c956d1c5f7",
 		"31abd5d9-1169-21c6-862a-64d2ebb06cdc",
 		"9f7d0bcf-8846-64c5-2a9d-4a0494865152",
-		"6cbf2205-2cbb-8ca4-3f69-8891887a0e38"
+		"6cbf2205-2cbb-8ca4-3f69-8891887a0e38",
+		"e2f663e4-c2f3-39c7-10e0-4f8991b4de3c"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -881,6 +882,201 @@
 						"headers": "",
 						"data": null,
 						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e2f663e4-c2f3-39c7-10e0-4f8991b4de3c",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost/BookStoreAPI/public/book/create",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
+			"data": [
+				{
+					"key": "title",
+					"value": "Dog of War",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "A Book abiut american civil war",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "10000",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "photo",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "author",
+					"value": "Rangga",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "publisher",
+					"value": "Gramedia",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "API untuk menambahkan buku",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1594915658641,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 259,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "35",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 16 Jul 2020 16:07:20 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"success\":\"1\",\"message\":\"Succeed\"}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "API Response untuk menambahkan buku",
+					"id": "90804754-8378-794e-fb02-625b23bb0c20",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/book/create",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": [
+							{
+								"key": "title",
+								"value": "Dog of War",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "description",
+								"value": "A Book abiut american civil war",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "price",
+								"value": "10000",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "photo",
+								"value": {
+									"0": {}
+								},
+								"description": "",
+								"type": "file",
+								"enabled": true
+							},
+							{
+								"key": "author",
+								"value": "Rangga",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "publisher",
+								"value": "Gramedia",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
 						"dataMode": "params"
 					}
 				}

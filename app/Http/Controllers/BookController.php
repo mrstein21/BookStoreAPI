@@ -41,6 +41,7 @@ class BookController extends Controller
            "author"=>$request->author,
            "photo"=>$bukti_kunjungan,
            "price"=>$request->price,
+           "publisher"=>$request->publisher
        ]);
        return  response()->json(["success"=>"1","message"=>"Succeed"]);
     }
