@@ -35,13 +35,19 @@ class AuthController extends Controller
             return response()->json(["success"=>"0","message"=>"Password doesn't match"]);
         }
 
-        DB::table("users")->insert([
+        $id=DB::table("users")->insertGetId([
             "name"=>$request->name,
             "email"=>$request->email,
             "password"=>Hash::make($request->password),
         ]);
 
-        return response()->json(["success"=>"1","message"=>"Register success"]);
+        return response()->json(["success"=>"1","message"=>"Register success",
+          "data"=>[
+            "name"=>$request->name,
+            "email"=>$request->email,
+            "id"=>$id
+          ]
+        ]);
     }
 
     public function Login(Request $request){

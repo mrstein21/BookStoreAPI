@@ -250,7 +250,7 @@
 			"id": "50e9bf32-c27a-ccb2-b211-d4c956d1c5f7",
 			"headers": "",
 			"headerData": [],
-			"url": "localhost/BookStoreAPI/public/transaction_list/2?page=1",
+			"url": "localhost/BookStoreAPI/public/transaction_list/11?page=1",
 			"queryParams": [
 				{
 					"key": "page",
@@ -260,18 +260,20 @@
 					"enabled": true
 				}
 			],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "GET",
-			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
 			"data": null,
 			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1619192328468,
 			"name": "request untuk melihat daftar transaksi setiap user",
 			"description": "-/transaction_list/{user_id}?page=1\n\nuser_id adalah kolom id pada tabel users",
-			"descriptionFormat": "html",
-			"time": 1594890454073,
-			"version": 2,
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
 			"responses": [
 				{
 					"status": "",
@@ -364,10 +366,7 @@
 						"dataMode": "params"
 					}
 				}
-			],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
+			]
 		},
 		{
 			"id": "6cbf2205-2cbb-8ca4-3f69-8891887a0e38",
@@ -382,18 +381,20 @@
 			],
 			"url": "localhost/BookStoreAPI/public/transaction",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "POST",
-			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
 			"data": [],
 			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1619250770869,
 			"name": "API untuk mensave transaksi buku",
 			"description": "keterangan \n -user_id adalah id user \n -id dalam json_array book adalah id buku",
-			"descriptionFormat": "html",
-			"time": 1594891329810,
-			"version": 2,
+			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
 			"responses": [
 				{
 					"status": "",
@@ -487,10 +488,7 @@
 					}
 				}
 			],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n  \"user_id\":2,\n  \"books\":[\n  \t {\n  \t \t\"id\":1\n  \t },\n  \t {\n  \t \t\"id\":2\n  \t }\n   ]\n}"
+			"rawModeData": "{\n  \"user_id\":2,\n  \"books\":[\n  \t {\n  \t \t\"id\":1,\n  \t \t\"qty\":1\n  \t },\n  \t {\n  \t \t\"id\":2,\n  \t \t\"qty\":1\n  \t }\n   ]\n}"
 		},
 		{
 			"id": "9f7d0bcf-8846-64c5-2a9d-4a0494865152",
@@ -541,118 +539,6 @@
 			"description": "API untuk request Register user",
 			"collectionId": "36f21916-0932-557e-70b5-3563e52749c5",
 			"responses": [
-				{
-					"status": "",
-					"responseCode": {
-						"code": 200,
-						"name": "OK",
-						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
-					},
-					"time": 339,
-					"headers": [
-						{
-							"name": "cache-control",
-							"key": "cache-control",
-							"value": "no-cache, private",
-							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
-						},
-						{
-							"name": "connection",
-							"key": "connection",
-							"value": "Keep-Alive",
-							"description": "Options that are desired for the connection"
-						},
-						{
-							"name": "content-length",
-							"key": "content-length",
-							"value": "44",
-							"description": "The length of the response body in octets (8-bit bytes)"
-						},
-						{
-							"name": "content-type",
-							"key": "content-type",
-							"value": "application/json",
-							"description": "The mime type of this content"
-						},
-						{
-							"name": "date",
-							"key": "date",
-							"value": "Thu, 16 Jul 2020 09:13:02 GMT",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"name": "keep-alive",
-							"key": "keep-alive",
-							"value": "timeout=5, max=100",
-							"description": "Custom header"
-						},
-						{
-							"name": "server",
-							"key": "server",
-							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
-							"description": "A name for the server"
-						},
-						{
-							"name": "x-powered-by",
-							"key": "x-powered-by",
-							"value": "PHP/7.3.0",
-							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
-						}
-					],
-					"cookies": [],
-					"mime": "",
-					"text": "{\"success\":\"1\",\"message\":\"Register success\"}",
-					"language": "json",
-					"rawDataType": "text",
-					"previewType": "text",
-					"searchResultScrolledTo": -1,
-					"forceNoPretty": false,
-					"write": true,
-					"empty": false,
-					"failed": false,
-					"name": "API untuk response  Register user jika berhasil",
-					"id": "798d1125-278a-0244-acb6-abccd50f1cad",
-					"request": {
-						"url": "localhost/BookStoreAPI/public/register",
-						"pathVariables": {},
-						"pathVariableData": [],
-						"queryParams": [],
-						"headerData": [],
-						"headers": "",
-						"data": [
-							{
-								"key": "email",
-								"value": "Giorno Giovana",
-								"description": "",
-								"type": "text",
-								"enabled": true
-							},
-							{
-								"key": "name",
-								"value": "jojowind@gmail.com",
-								"description": "",
-								"type": "text",
-								"enabled": true
-							},
-							{
-								"key": "password",
-								"value": "jayaswara",
-								"description": "",
-								"type": "text",
-								"enabled": true
-							},
-							{
-								"key": "confirmation_password",
-								"value": "jayaswara",
-								"description": "",
-								"type": "text",
-								"enabled": true
-							}
-						],
-						"method": "POST",
-						"dataMode": "params"
-					}
-				},
 				{
 					"status": "",
 					"responseCode": {
@@ -759,6 +645,118 @@
 								"type": "text",
 								"enabled": true,
 								"description": ""
+							}
+						],
+						"method": "POST",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 349,
+					"headers": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache, private",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "Keep-Alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "114",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 24 Apr 2021 07:05:10 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "keep-alive",
+							"key": "keep-alive",
+							"value": "timeout=5, max=100",
+							"description": "Custom header"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "PHP/7.3.0",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"success\":\"1\",\"message\":\"Register success\",\"data\":{\"name\":\"jojowind@gmail.com\",\"email\":\"Giorno Giovana\",\"id\":17}}",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "API untuk request Register user jika berhasil",
+					"id": "aba6902c-b6af-38d6-55cd-f0084ba1fa43",
+					"request": {
+						"url": "localhost/BookStoreAPI/public/register",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": [
+							{
+								"key": "email",
+								"value": "Giorno Giovana",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "name",
+								"value": "jojowind@gmail.com",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "password",
+								"value": "jayaswara",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "confirmation_password",
+								"value": "jayaswara",
+								"description": "",
+								"type": "text",
+								"enabled": true
 							}
 						],
 						"method": "POST",

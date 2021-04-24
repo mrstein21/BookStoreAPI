@@ -43,6 +43,7 @@ class TransactionController extends Controller
                 DB::table("detail_trans_book")->insert([
                     "trans_id"=>$no_tr,
                     "book_id"=>$request_e["id"],
+                    "qty"=>$request_e["qty"]
                 ]);
             }
             
@@ -57,10 +58,10 @@ class TransactionController extends Controller
 
 
     public function getTransaction($id){
-        $data=DB::table("trans_book")->where("user_id",$id)->paginate(10);
+        $data=DB::table("trans_book")->where("user_id",$id)->orderBy("trans_book.date","DESC")->paginate(10);
         foreach($data as $key=>$row){
             $total=DB::table("detail_trans_book")
-            ->select(DB::raw("SUM(books.price) as  total"))
+            ->select(DB::raw("SUM(books.price*detail_trans_book.qty) as  total"))
             ->join("books","id","=","detail_trans_book.book_id")
             ->where("trans_id",$row->trans_id)
             ->first();
@@ -74,7 +75,7 @@ class TransactionController extends Controller
 
     public function getDetailTransaction($id){
         $total=DB::table("detail_trans_book")
-        ->select(DB::raw("SUM(books.price) as  total"))
+        ->select(DB::raw("SUM(books.price*detail_trans_book.qty) as  total"))
         ->join("books","id","=","detail_trans_book.book_id")
         ->where("trans_id",$id)
         ->first();

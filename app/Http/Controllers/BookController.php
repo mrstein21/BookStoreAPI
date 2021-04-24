@@ -32,14 +32,14 @@ class BookController extends Controller
        }
 
        $file=$request->file("photo");
-       $bukti_kunjungan =sha1(time());  
-       $file->move(storage_path('books'), $bukti_kunjungan);
+       $photo =sha1(time());  
+       $file->move(storage_path('book'), $photo);
 
        DB::table("books")->insert([
            "title"=>$request->title,
            "description"=>$request->description,
            "author"=>$request->author,
-           "photo"=>$bukti_kunjungan,
+           "photo"=>$photo,
            "price"=>$request->price,
            "publisher"=>$request->publisher
        ]);
@@ -47,7 +47,7 @@ class BookController extends Controller
     }
 
     public function getFoto($name){
-        $avatar_path = storage_path('books') . '/' . $name;
+        $avatar_path = storage_path('book') . '/' . $name;
         if (file_exists($avatar_path)) {
             $file = file_get_contents($avatar_path);
             return response($file, 200)->header('Content-Type', 'image/jpeg');
